@@ -1,10 +1,11 @@
 import EventItemPage from "../events/event-item";
+import classes from './event-list.module.css'
 
 function EventListPage(props) {
   const { items } = props;
 
   return (
-    <ul>
+    <ul className={classes.list}>
       {items.map((item) => (
         <EventItemPage
           key={item.id}
